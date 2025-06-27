@@ -1,3 +1,4 @@
+import sys
 
 def addition(num1, num2):
     add = num1 + num2
@@ -15,12 +16,11 @@ def division(num1, num2):
     div = num1 / num2
     return  div
 
-addition(10 , 5)
-subtraction(10, 5)
-multiplication(10, 5)
-division(10, 5)
 
-print("Addition:", addition(10, 5))
-print("Subtraction:", subtraction(10, 5 ))
-print("Multiplication:", multiplication(10, 5))
-print("Division:", division(10, 5))
+num1 = float(sys.argv[1])
+operation = sys.argv[2]
+num2 = float(sys.argv[3])
+
+if  operation == "addition":
+    output = add(num1, num2)
+    print(output)
