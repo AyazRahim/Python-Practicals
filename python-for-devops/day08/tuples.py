@@ -1,7 +1,4 @@
 # Basic
-from email.iterators import typed_subpart_iterator
-from tokenize import cookie_re
-
 ebs_volume_tuple = ("uiux", "cache", "logs", "staticweb")
 print(ebs_volume_tuple)
 
