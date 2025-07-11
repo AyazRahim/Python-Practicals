@@ -1,6 +1,6 @@
 def update_server_config(file_path, key, value):
 
-    with open(file_path, 'r') as file:  # consider file_path as file only.
+    with open(file_path, 'r') as file:  # consider file_path as file
         lines = file.readlines()
 
     with open(file_path, 'w') as file:
